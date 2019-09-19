@@ -13,3 +13,30 @@ body {
   background: #3a3333;
   color: white;
 }
+
+/* Header Stuff */
+.mainTitle {
+  height:10rem;
+  width: 100%;
+  padding: 3rem 5rem 1rem 5rem;
+  text-align: center;
+  font-size: 5rem;
+  background-color: #222;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.mainNav {
+  background-color: #222;
+  text-align: center;
+  margin-top: 0rem;
+  padding-top: 1rem;
+}
+
+ul.mainNav {
+  list-style: none;
+}
+
+.navItem {
+  
+}

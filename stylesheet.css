@@ -14,41 +14,41 @@ html {
 body {
   background: #3a3333;
   color: white;
+  height: 2000px;
 }
 
 /* Header Stuff */
-.mainTitle {
-  height:10rem;
-  width: 100%;
-  text-align: center;
-  padding: 3rem 5rem 1rem 5rem;
-  font-size: 5rem;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #222;
-  margin: 0 auto;
+
+  position: sticky;
+  top: 0;
 }
 
-.mainNav {
+.mainTitle {
+  font-size: 5rem;
   background-color: #222;
-  padding-top: 1rem;
-  padding: 0;
+}
+
+.navContainer {
+  width: 60%;
   font-size: 0;
 }
 
-ul.mainNav {
-  width: 60%;
-  padding: 0;
+.mainNav {
   list-style: none;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navItem {
+  width: 100%;
   font-size: 2.25rem;
-  display: inline-block;
   background: grey;
   text-align: center;
-  width: 25%;
-  height: 20%;
-  margin: 0 auto;
 }
 
 .navItem a {

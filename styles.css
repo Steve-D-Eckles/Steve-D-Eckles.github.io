@@ -90,15 +90,13 @@ main {
     margin-top: 0;
 }
 
-.page:last-child {
-    border-bottom: none;
+#home p,
+#contact p {
+    margin-top: 40vh;
+    width: 60%;
 }
 
 article p {
-    margin-top: 40vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
     font-size: 3rem;
     text-align: center;
 }
@@ -106,6 +104,31 @@ article p {
 article a img {
     height: 100px;
     width: 200px;
+}
+
+.project-wrapper {
+    margin-top: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-wrapper img {
+    transform: rotate(-90deg)
+}
+
+.project-wrapper p {
+    margin-left: 33vw;
+}
+
+#me p {
+    margin-top: 0;
+}
+
+#me h2 {
+    margin-top: 25vh;
+    font-size: 3.2rem;
 }
 
 @media only screen and (min-width: 961px) {

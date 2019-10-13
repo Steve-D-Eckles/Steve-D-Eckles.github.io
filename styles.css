@@ -90,15 +90,18 @@ main {
     margin-top: 0;
 }
 
-#home p,
-#contact p {
-    margin-top: 40vh;
-    width: 60%;
+#home::before,
+#me::before,
+#projects::before {
+    content: "";
+    height: 103px;
+    width: 200px;
 }
 
 article p {
     font-size: 3rem;
     text-align: center;
+    width: 60%;
 }
 
 article a img {
@@ -106,31 +109,74 @@ article a img {
     width: 200px;
 }
 
-.project-wrapper {
-    margin-top: 35vh;
+.project-wrapper,
+.about-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.project-wrapper::before {
+    content: "";
+    width: 200px;
+    height: 103px;
+}
+
 .project-wrapper img {
     transform: rotate(-90deg)
 }
 
-.project-wrapper p {
-    margin-left: 33vw;
+.about-wrapper {
+    flex-direction: column;
 }
 
 #me p {
-    margin-top: 0;
+    margin-top: 1.5rem;
 }
 
 #me h2 {
-    margin-top: 25vh;
     font-size: 3.2rem;
 }
 
+#contact {
+    justify-content: center;
+}
+
+#contact .socials {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+#contact .socials li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+#contact .socials img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+#contact .socials li:first-of-type img {
+    filter: invert(100%);
+}
+
+#contact p:last-child {
+    font-size: 1rem;
+}
+
+#contact p a {
+    color: white;
+}
+
+/**** QUERIES ****/
 @media only screen and (min-width: 961px) {
     body {
         width: 960px;

@@ -307,7 +307,6 @@ article a img {
 
     #contact .socials {
         flex-direction: row;
-        align-items: default;
         justify-content: space-around;
     }
 

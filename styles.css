@@ -6,8 +6,8 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 /**** BODY STYLES ****/
@@ -18,17 +18,17 @@ body {
 
 /**** HEADER STUFF ****/
 header {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: #222;
+    display: flex;
+    flex-direction: column;
     position: sticky;
     top: 0;
 }
 
 .mainTitle {
-    font-size: 5rem;
     background-color: #222;
+    font-size: 5rem;
 }
 
 .navContainer {
@@ -36,23 +36,23 @@ header {
 }
 
 .mainNav {
-    list-style: none;
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 
 .navItem {
-    width: 100%;
-    font-size: 2.25rem;
     background: grey;
+    font-size: 2.25rem;
     text-align: center;
+    width: 100%;
 }
 
 .navItem a {
-    display: block;
-    width: 100%;
-    text-decoration: none;
     color: black;
+    display: block;
+    text-decoration: none;
+    width: 100%;
 }
 
 .navItem a:hover {
@@ -72,23 +72,23 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     height: 95vh;
     overflow: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    width: 100%;
 }
 
 /**** PAGES ****/
 .page {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     height: 100%;
-    scroll-snap-align: end;
+    justify-content: space-between;
     margin-top: 0;
+    scroll-snap-align: end;
+    width: 100%;
 }
 
 #home::before,
@@ -113,16 +113,16 @@ article a img {
 
 .project-wrapper,
 .about-wrapper {
-    width: 100%;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .project-wrapper::before {
     content: "";
-    width: 200px;
     height: 103px;
+    width: 200px;
 }
 
 .project-wrapper img {
@@ -148,19 +148,19 @@ article a img {
 }
 
 #contact .socials {
-    list-style: none;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    width: 80%;
     justify-content: center;
-    align-items: center;
+    list-style: none;
     margin-top: 1.5rem;
+    width: 80%;
 }
 
 #contact .socials li {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;  
     font-size: 2.5rem;
 }
 
@@ -185,18 +185,20 @@ article a img {
 /**** PROJECTS ****/
 /* Sidebar */
 .sidebar {
-    display: none;
-    position: fixed;
-    left: 0;
-    width: 20vw;
-    height: 100vh;
     border-right: 2px solid grey;
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    width: 20vw;
+    
+    
 }
 
 .sidebar ul {
-    list-style: none;
     display: flex;
     flex-direction: column;
+    list-style: none;  
 }
 
 .sidebar ul li {
@@ -204,16 +206,16 @@ article a img {
 }
 
 .sidebar ul li a {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 5vh;
-    background-color: grey;
-    text-decoration: none;
-    color: black;
-    font-size: 2rem;
     border-bottom: 1px solid black;
+    background-color: grey;
+    color: black;
+    display: flex;
+    font-size: 2rem; 
+    height: 5vh;
+    justify-content: center;      
+    text-decoration: none;
+    width: 100%;
 }
 
 .sidebar ul li a:hover {
@@ -232,13 +234,13 @@ article a img {
 }
 
 .projects-page-wrapper article {
-    width: 100%;
-    height: 90vh;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 90vh;
     justify-content: space-between;
     scroll-snap-align: end;
+    width: 100%;
 }
 
 .projects-page-wrapper article p {
@@ -267,9 +269,9 @@ article a img {
 }
 
 .projects-center-box {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -282,8 +284,8 @@ article a img {
 }
 @media only screen and (min-width: 961px) {
     body {
-        width: 960px;
         margin: 0 auto;
+        width: 960px;
     }
 }
 
@@ -297,8 +299,8 @@ article a img {
     }
 
     .mainTitle {
-        width: 40%;
         padding-left: 1rem;
+        width: 40%;
     }
 
     .navContainer {
@@ -306,8 +308,8 @@ article a img {
     }
 
     #contact .socials {
-        flex-direction: row;
         align-items: default;
+        flex-direction: row;
         justify-content: space-around;
     }
 

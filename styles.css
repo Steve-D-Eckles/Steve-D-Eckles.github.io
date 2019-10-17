@@ -107,7 +107,7 @@ article p {
 }
 
 article a img {
-    height: 100px;
+    height: 10vh;
     width: 200px;
 }
 
@@ -121,12 +121,14 @@ article a img {
 
 .project-wrapper::before {
     content: "";
-    height: 103px;
-    width: 200px;
+    height: 100px;
+    width: 150px;
 }
 
 .project-wrapper img {
-    transform: rotate(-90deg)
+    transform: rotate(-90deg);
+    height: 100px;
+    width: 150px;
 }
 
 .about-wrapper {
@@ -135,6 +137,7 @@ article a img {
 
 /* Projects Redirect */
 #projects h2 {
+    text-align: center;
     font-size: 3rem;
     font-weight: normal;
 }
@@ -285,6 +288,10 @@ article a img {
 /* Text Overflow Prevention */
 @media only screen and (max-width: 519px) {
     article p {
+        font-size: 2rem;
+    }
+
+    #projects h2 {
         font-size: 2rem;
     }
 }

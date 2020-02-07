@@ -16,6 +16,16 @@ body {
     color: white;
 }
 
+header,
+main h2 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
 /**** HEADER STUFF ****/
 header {
     align-items: center;
@@ -72,6 +82,7 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
     height: 95vh;
     overflow: scroll;
     scroll-behavior: smooth;
@@ -147,7 +158,8 @@ article a img {
     margin-top: 1.5rem;
 }
 
-#me h2 {
+#me h2,
+#contact h2 {
     font-size: 3.2rem;
 }
 
@@ -221,6 +233,7 @@ article a img {
     font-size: 2rem;
     height: 5vh;
     justify-content: center;
+    text-align: center;
     text-decoration: none;
     width: 100%;
 }
@@ -255,7 +268,7 @@ article a img {
 }
 
 .projects-page-wrapper article h2 {
-    font-size: 3rem;
+    font-size: 3.25rem;
 }
 
 .projects-page-wrapper article a {
